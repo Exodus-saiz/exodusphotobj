@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>SAFI ET FILS - Gestion Gaz</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header>
+  <h1>SAFI ET FILS</h1>
+  <div id="datetime"></div>
+</header>
+
+<main>
+  <h2>Gestion des Ventes et Stocks</h2>
+
+  <form id="venteForm">
+    <label for="categorie">Catégorie gaz :</label>
+    <select id="categorie" required>
+      <option value="oryx3kg">Oryx 3kg</option>
+      <option value="oryx6kg">Oryx 6kg</option>
+      <option value="oryx12_5kg">Oryx 12,5kg</option>
+      <option value="oryx38kg">Oryx 38kg</option>
+      <option value="benin3kg">Bénin Petro 3kg</option>
+      <option value="benin6kg">Bénin Petro 6kg</option>
+      <option value="benin12_5kg">Bénin Petro 12,5kg</option>
+    </select>
+
+    <label for="quantite">Quantité vendue :</label>
+    <input type="number" id="quantite" min="1" required />
+
+    <button type="submit">Enregistrer la vente</button>
+  </form>
+
+  <section id="rapport">
+    <h3>Résumé</h3>
+    <div id="resumeVentes"></div>
+  </section>
+</main>
+
+<footer>
+  <p>Site créé par Exodus Saïz</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
